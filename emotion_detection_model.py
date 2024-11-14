@@ -42,7 +42,7 @@ train_datagen = ImageDataGenerator(rescale=1./255, validation_split=0.2)  # %80 
 validation_datagen = ImageDataGenerator(rescale=1./255, validation_split=0.2)
 
 train_generator = train_datagen.flow_from_directory(
-    'C:\\Users\\Eyup\\Desktop\\Bitirme Deneme 5\\Flask\\dataset\\data\\train',
+    '#Train Data ları Dosya yolu',
     target_size=(48, 48),
     batch_size=32,
     color_mode='grayscale',
@@ -51,7 +51,7 @@ train_generator = train_datagen.flow_from_directory(
 )
 
 validation_generator = validation_datagen.flow_from_directory(
-    'C:\\Users\\Eyup\\Desktop\\Bitirme Deneme 5\\Flask\\dataset\\data\\test',
+    '#Test Dataları Dosya Yolu',
     target_size=(48, 48),
     batch_size=32,
     color_mode='grayscale',
